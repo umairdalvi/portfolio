@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/monogram.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/jetbrainsmono.css">
+    <link rel="stylesheet" href="./assets/fonts/roboto.css">
+    <link rel="stylesheet" href="./assets/fonts/lora.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Media Queries -->
+  <link rel="stylesheet" href="./assets/css/media.css">
+
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+</head>
+
+<body>
+  <header class="bg-black">
+    <nav class="navbar">
+      <div class="container-fluid align-items-center justify-content-between">
+        <div>
+          <a href="./index.html" class="navbar-brand">
+            <img src="./assets/images/monogram.png" alt="site-logo" width="70%">
+          </a>
+        </div>
+        <div>
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item px-3">
+              <a href="./index.html" class="nav-link nav-link-custom">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="./about.html" class="nav-link nav-link-custom">About</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="./gallery.html" class="nav-link nav-link-custom">Gallery</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="./services.html" class="nav-link nav-link-custom">Services</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="./blog.html" class="nav-link nav-link-custom">Blog</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="./contact.html" class="nav-link nav-link-custom">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-icons nav-color user-select-none">
+          <span class="site-icon p-1"><a data-bs-toggle="tooltip" data-bs-title="Twitter" data-bs-placement="left"
+              href="#"><i class="bi bi-twitter-x"></i></a></span>
+          <span class="site-icon p-1"><a data-bs-toggle="tooltip" data-bs-title="Facebook" data-bs-placement="left"
+              href="#"><i class="bi bi-facebook"></i></a></span>
+          <span class="site-icon p-1"><a data-bs-toggle="tooltip" data-bs-title="Instagram" data-bs-placement="left"
+              href="#"><i class="bi bi-instagram"></i></a></span>
+          <span class="site-icon p-1"><a data-bs-toggle="tooltip" data-bs-title="LinkedIn" data-bs-placement="left"
+              href="#"><i class="bi bi-linkedin"></i></a></span>
+        </div>
+        <span class="menu-icon fs-3 p-1" data-bs-toggle="offcanvas" href="#sidebarMenu" role="button">
+          <i class="bi bi-list"></i>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarMenu" style="--bs-offcanvas-width: 300px;">
+    <div class="offcanvas-header" data-bs-theme="dark">
+      <h5 class="offcanvas-title fs-4" id="sidebarMenuLabel"><img src="./assets/images/sidebar-logo.png" alt=""></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" id="sidebarCloseBtn" data-bs-theme="dark"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <ul class="list-unstyled p-0 text-center">
+          <li class="py-2"><a class="text-decoration-none text-reset fs-5" href="./index.html">Home</a></li>
+          <li class="py-2"><a class="text-decoration-none text-reset fs-5" href="./about.html">About</a></li>
+          <li class="py-2"><a class="text-decoration-none text-reset fs-5" href="./gallery.html">Gallery</a></li>
+          <li class="py-2"><a class="text-decoration-none text-reset fs-5" href="./services.html">Services</a></li>
+          <li class="py-2"><a class="text-decoration-none text-reset fs-5" href="./blog.html">Blog</a></li>
+          <li class="py-2"><a class="text-decoration-none text-reset fs-5" href="./contact.html">Contact</a></li>
+          <li class="mt-3">
+            <span class="site-icon p-1 mx-2"><a data-bs-toggle="tooltip" data-bs-title="Twitter" data-bs-placement="top"
+                href="#"><i class="bi bi-twitter-x"></i></a></span>
+            <span class="site-icon p-1 mx-2"><a data-bs-toggle="tooltip" data-bs-title="Facebook"
+                data-bs-placement="top" href="#"><i class="bi bi-facebook"></i></a></span>
+            <span class="site-icon p-1 mx-2"><a data-bs-toggle="tooltip" data-bs-title="Instagram"
+                data-bs-placement="top" href="#"><i class="bi bi-instagram"></i></a></span>
+            <span class="site-icon p-1 mx-2"><a data-bs-toggle="tooltip" data-bs-title="LinkedIn"
+                data-bs-placement="top" href="#"><i class="bi bi-linkedin"></i></a></span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="services-section bg-black">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="mb-4" data-aos="fade-up">
+              <h2 class="text-light services-title">Services</h2>
+            </div>
+            <div data-aos="fade-up">
+              <p class="services-dsc">
+                As an aspiring full-stack developer, I'm passionate about creating solutions that combine functionality
+                with great design. While I'm still learning and growing, here are some of the services I currently
+                offer.
+              </p>
+            </div>
+            <div data-aos="fade-up">
+              <a class="btn border-0 btn-custom mt-3 mx-1 px-4 py-2" href="./contact.html">AVAILABLE FOR HIRE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs bg-custom-dark-primary p-3 mt-5">
+        <div class="container" data-aos="fade-right">
+          <ol class="list-unstyled d-flex gap-3 m-0">
+            <li><a class="fw-semibold text-decoration-none text-highlight-accent" href="./index.html">Home</a></li>
+            <li id="about">Services</li>
+          </ol>
+        </div>
+      </nav>
+      <div class="container py-5">
+        <div class="row row-gap-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="service-container p-4">
+              <div class="service-content">
+                <div class="service-icon d-flex justify-content-start mb-3">
+                  <span class="fs-3 rounded-circle d-flex align-items-center justify-content-center"><i
+                      class="bi bi-globe"></i></span>
+                </div>
+                <div>
+                  <h4 class="service-title">Web Design & Development</h4>
+                </div>
+                <div>
+                  <p class="service-info">
+                    Crafting responsive and visually appealing websites using HTML, CSS, and SASS to ensure a seamless
+                    user experience across all devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="service-container p-4">
+              <div class="service-content">
+                <div class="service-icon d-flex justify-content-start mb-3">
+                  <span class="fs-3 rounded-circle d-flex align-items-center justify-content-center"><i
+                      class="bi bi-display"></i></span>
+                </div>
+                <div>
+                  <h4 class="service-title">FrontEnd Development</h4>
+                </div>
+                <div>
+                  <p class="service-info">
+                    Building interactive and user-friendly interfaces with a focus on clean code and intuitive design
+                    principles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="service-container p-4">
+              <div class="service-content">
+                <div class="service-icon d-flex justify-content-start mb-3">
+                  <span class="fs-3 rounded-circle d-flex align-items-center justify-content-center"><i
+                      class="bi bi-lightning-charge"></i></span>
+                </div>
+                <div>
+                  <h4 class="service-title">Website Optimization</h4>
+                </div>
+                <div>
+                  <p class="service-info">
+                    Enhancing performance and usability to ensure your website loads quickly and functions smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="service-container p-4">
+              <div class="service-content">
+                <div class="service-icon d-flex justify-content-start mb-3">
+                  <span class="fs-3 rounded-circle d-flex align-items-center justify-content-center"><i
+                      class="bi bi-bug"></i></span>
+                </div>
+                <div>
+                  <h4 class="service-title">Code Debugging & Troubleshooting</h4>
+                </div>
+                <div>
+                  <p class="service-info">
+                    Identifying and resolving issues to improve the functionality and reliability of your website or
+                    application.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black pricing-section pb-5">
+      <div class="container" data-aos="fade-up">
+        <div>
+          <h2 class="pricing-title">PRICING</h2>
+        </div>
+        <p class="pricing-dsc">
+          Check Out My Affordable Pricing
+        </p>
+        <div class="container mt-4">
+          <div class="row justify-content-around row-gap-4">
+            <div class="col-md-5 col-lg-6">
+              <div>
+                <div class="d-flex justify-content-between service">
+                  <h3 class="mb-0">Basic Package</h3>
+                  <h4>₹ 9,999</h4>
+                </div>
+                <div>
+                  <ul class="p-0 ms-5 mt-2">
+                    <li>Single-page website</li>
+                    <li>Responsive design</li>
+                    <li>Basic SEO optimization</li>
+                    <li>Delivery: 1-2 weeks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-6">
+              <div>
+                <div class="d-flex justify-content-between service">
+                  <h3 class="mb-0">Standard Package</h3>
+                  <h4>₹ 24,999</h4>
+                </div>
+                <div>
+                  <ul class="p-0 ms-5 mt-2">
+                    <li>Multi-page website (up to 5 pages)</li>
+                    <li>Responsive design</li>
+                    <li>SEO optimization</li>
+                    <li>Integration of basic contact forms</li>
+                    <li>Delivery: 2-4 weeks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-6">
+              <div>
+                <div class="d-flex justify-content-between service">
+                  <h3 class="mb-0">Premium Package</h3>
+                  <h4>₹ 49,999</h4>
+                </div>
+                <div>
+                  <ul class="p-0 ms-5 mt-2">
+                    <li>Custom multi-page website</li>
+                    <li>Advanced animations and interactivity</li>
+                    <li>E-commerce functionality
+                    </li>
+                    <li>SEO optimization + analytics integration</li>
+                    <li>Delivery: 4-6 weeks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-6">
+              <div>
+                <div class="d-flex justify-content-between service">
+                  <h3 class="mb-0">Custom Package</h3>
+                  <h4>₹ 74,999</h4>
+                </div>
+                <div>
+                  <ul class="p-0 ms-5 mt-2">
+                    <li>Tailored solutions for your specific needs</li>
+                    <li>Custom features and integrations</li>
+                    <li>Ongoing support available</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section class="bg-black">
+      <div class="container" data-aos="fade-up">
+        <div>
+          <h2 class="testimonials-title">TESTIMONIALS</h2>
+        </div>
+        <p class="testimonials-subtitle">
+          What are they saying
+        </p>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="testimonials pb-5 mt-5">
+          <div class="review-card text-center h-100">
+            <div>
+              <span class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <div>
+              <p class="review">
+                "This service exceeded all my expectations. From start to finish, everything was smooth and
+                professional. Highly recommend to anyone looking for quality and reliability!"
+              </p>
+            </div>
+            <div class="client-photo d-flex justify-content-center">
+              <img src="./assets/images/testimonials-1.jpg" alt="" width="30%">
+            </div>
+            <div>
+              <h4 class="client-name mb-0">David P.</h4>
+            </div>
+            <div>
+              <h5 class="client-job">Entrepreneur</h5>
+            </div>
+          </div>
+          <div class="review-card text-center h-100">
+            <div>
+              <span class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <div>
+              <p class="review">
+                "I've used many similar services, but none come close to this. The team was responsive, and the results
+                were fantastic. Will definitely return for more!"
+              </p>
+            </div>
+            <div class="client-photo d-flex justify-content-center">
+              <img src="./assets/images/testimonials-2.jpg" alt="" width="30%">
+            </div>
+            <div>
+              <h4 class="client-name mb-0">Sarah K.</h4>
+            </div>
+            <div>
+              <h5 class="client-job">Mktg. Manager</h5>
+            </div>
+          </div>
+          <div class="review-card text-center h-100">
+            <div>
+              <span class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <div>
+              <p class="review">
+                "Choosing this company was the best decision for my project. Their attention to detail and commitment to
+                excellence are unmatched. Five stars!"
+              </p>
+            </div>
+            <div class="client-photo d-flex justify-content-center">
+              <img src="./assets/images/testimonials-3.jpg" alt="" width="30%">
+            </div>
+            <div>
+              <h4 class="client-name mb-0">Emily R.</h4>
+            </div>
+            <div>
+              <h5 class="client-job">Designer</h5>
+            </div>
+          </div>
+          <div class="review-card text-center h-100">
+            <div>
+              <span class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <div>
+              <p class="review">
+                "I was blown away by the professionalism and creativity. They truly understand the client's needs and
+                deliver exceptional results. Highly recommended!"
+              </p>
+            </div>
+            <div class="client-photo d-flex justify-content-center">
+              <img src="./assets/images/testimonials-4.jpg" alt="" width="30%">
+            </div>
+            <div>
+              <h4 class="client-name mb-0">James L.</h4>
+            </div>
+            <div>
+              <h5 class="client-job">Software Developer</h5>
+            </div>
+          </div>
+          <div class="review-card text-center h-100">
+            <div>
+              <span class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <div>
+              <p class="review">
+                "This team is the perfect blend of reliability and innovation. I couldn’t be happier with the results.
+                They brought my vision to life!"
+              </p>
+            </div>
+            <div class="client-photo d-flex justify-content-center">
+              <img src="./assets/images/testimonials-5.jpg" alt="" width="30%">
+            </div>
+            <div>
+              <h4 class="client-name mb-0">Alex D.</h4>
+            </div>
+            <div>
+              <h5 class="client-job">Photographer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center">
+    <div class="d-flex justify-content-center">
+      <span class="footer-icon mx-1 rounded-circle d-flex justify-content-center align-items-center"
+        data-bs-toggle="tooltip" data-bs-title="Twitter" data-bs-placement="left">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+      </span>
+      <span class="footer-icon mx-1 rounded-circle d-flex justify-content-center align-items-center"
+        data-bs-toggle="tooltip" data-bs-title="Facebook">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+      </span>
+      <span class="footer-icon mx-1 rounded-circle d-flex justify-content-center align-items-center"
+        data-bs-toggle="tooltip" data-bs-title="Instagram">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </span>
+      <span class="footer-icon mx-1 rounded-circle d-flex justify-content-center align-items-center"
+        data-bs-toggle="tooltip" data-bs-title="LinkedIn" data-bs-placement="right">
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </span>
+    </div>
+    <div class="mt-3">
+      <p>Designed by <span style="color: #27a776;">UmairDalvi</span></p>
+    </div>
+  </footer>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/js/slick-slider.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/initialize-popper.js"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 500,
+      delay: 250,
+    });
+  </script>
+
+</body>
+
+</html>

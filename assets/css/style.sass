@@ -1,0 +1,482 @@
+:root
+    --accent-color: #27a776
+    --color-grey-primary: #7d7d7d
+    --color-grey-secondary: #5d5d5d
+    --color-grey-tertiary: #191919
+    --color-black-primary: #1a1a1a
+    --color-black-secondary: #000000
+    --nav-color: #ffffff80
+    --text-color: #ffffff
+
+.text-accent
+    color: var(--accent-color)
+
+body
+    color: var(--text-color)
+    font-family: "Roboto", serif
+
+header
+    position: sticky
+    top: 0
+    z-index: 99
+
+.nav-link-custom
+    color: var(--nav-color)
+    font-weight: 400
+    text-transform: uppercase
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-visible
+        color: var(--text-color)
+
+.nav-color
+    color: var(--nav-color)
+
+.active
+    color: var(--text-color) !important
+
+.site-icon
+    a
+        color: var(--nav-color)
+        cursor: pointer
+        transition: all .3s linear
+        &:hover
+            color:  var(--accent-color)
+
+.menu-icon
+    display: none
+
+.about-section,
+.gallery-section,
+.services-section,
+.contact-section,
+.blog-section
+    padding: 100px 0 60px 0
+
+.hero-section
+    padding: 50px 0 60px 0
+
+.hero-title,
+.about-title,
+.gallery-title,
+.services-title,
+.pricing-dsc,
+.service,
+.contact-title,
+.blog-page-title,
+.recent-post-dsc,
+.profile-title,
+.testimonials-subtitle,
+.counting
+    font-family: "JetBrains Mono", serif
+
+.hero-dsc,
+.about-dsc,
+.gallery-dsc,
+.services-dsc,
+.service-info,
+.contact-dsc,
+.blog-page-dsc
+    color: #808080
+    font-size: 17px
+
+.underlight
+    position: relative
+    z-index: 2
+    &::before
+        content: "" 
+        position: absolute 
+        height: 10% 
+        bottom: 0 
+        left: 0 
+        right: 0 
+        background-color: var(--accent-color) 
+        z-index: 1 
+
+.btn-custom
+    color: var(--text-color)
+    font-size: 12px
+    background-color: var(--accent-color)
+    border-radius: 5px
+    &:hover,
+    &:active,
+    &:focus-visible
+        background-color: color-mix(in srgb, var(--accent-color) 90%, var(--text-color) 10%) !important
+    a
+        text-decoration: none
+
+.image-container
+    position: relative
+    height: 100%
+    overflow: hidden
+    border-radius: 10px
+    z-index: 4
+
+    &::after
+        position: absolute
+        content: ""
+        background-color: transparent
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        left: 0
+        z-index: 5
+        transition: all .2s linear
+
+    .project-link
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 10
+        transform: translate(-50%, -50%) // Center the icon
+        font-size: 30px
+        opacity: 0 // Make it invisible by default
+        transition: all 0.3s ease
+        text-decoration: none // Remove underline from the link
+
+    &:hover
+        img
+            transform: scale(1.04)
+
+        .project-link
+            opacity: 1
+            color: var(--text-color) !important
+            &:hover
+                color:  var(--accent-color) !important
+                
+
+        &::after
+            background-color: #00000095
+            
+    img
+        transition: all .2s linear
+        object-fit: cover
+        z-index: 1
+
+footer
+    padding: 40px 0
+    border-top: 1px solid color-mix(in srgb, #fafafa, transparent 95%) !important
+    background-color: #0d0d0d
+
+.footer-icon
+    width: 40px
+    height: 40px 
+    border: 1px solid #838383
+    transition: all .2s linear
+    a
+        color: #838383
+        transition: all .2s linear
+    &:hover
+        border: 1px solid  var(--accent-color)
+        cursor: pointer
+        a
+            color:  var(--accent-color)
+
+
+.text-highlight-accent
+    color:  var(--accent-color)
+
+.breadcrumbs
+    background-color: var(--color-grey-tertiary)
+
+#about
+    position: relative
+    &::before
+        position: absolute
+        content: "/" 
+        top: 0
+        left: -10px
+        padding-right: 10px 
+        color: color-mix(in srgb, #fafafa, transparent 40%) 
+
+
+.service-container
+    height: 100%
+    background-color: var(--color-grey-tertiary)
+    position: relative
+    z-index: 3
+    &::after
+        position: absolute
+        content: ""
+        background-color: var(--accent-color)
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 4
+        transform: scaleY(0)
+        transform-origin: bottom
+        transition: all .3s linear
+    &:hover
+        &::after
+            transform: scaleY(1)
+        
+        .service-info
+            transition: all .3s linear
+            color: var(--text-color) !important
+        
+        .service-icon
+            span
+                transition: all .4s linear
+                background-color: var(--text-color)
+                color: var(--accent-color)
+
+            
+.service-content
+    position: relative
+    z-index: 9
+
+.service-icon
+    span
+        background-color: var(--accent-color)
+        height: 50px
+        width: 50px
+
+.service-title
+    font-weight: 600
+    font-size: 16px
+
+.service-info
+    font-size: 14px
+
+.pricing-title
+    width: max-content
+    font-size: 1rem
+    color:  var(--color-grey-primary)
+    position: relative
+    &::after
+        position: absolute
+        content: ""
+        background-color: var(--accent-color)
+        height: 2px
+        width: 150px
+        bottom: 8px
+        left: 70px
+        
+.pricing-dsc
+    font-size: 1.5rem
+
+.service
+    padding-right: 5px
+
+    h3
+        font-size: 1.2rem
+    
+    h4
+        font-size: 1rem
+
+    border-bottom: 2px dashed var(--accent-color)
+
+.contact-icon
+    color:  var(--accent-color)
+    border: 1px solid var(--accent-color)
+    height: 50px
+    width: 50px
+    transition: all .2s linear
+    i
+        font-size: 1.5rem
+    &:hover
+        color: var(--text-color)
+        background-color: var(--accent-color)
+
+.contact-type
+    font-size: 1.1rem
+
+.contact-form
+    input,
+    textarea
+        color: var(--text-color)
+        background-color: var(--color-black-primary)
+        border-color: var(--color-grey-secondary)
+        &::placeholder
+            color: var(--color-grey-secondary)
+            font-weight: 500
+        &:active,
+        &:focus,
+        &:focus-visible
+            &::placeholder
+                color: var(--color-grey-secondary)
+            color: var(--text-color)
+            background-color: var(--color-black-primary)
+            caret-color:  var(--accent-color)
+            box-shadow: none
+            border-color:  var(--accent-color)
+    textarea
+        height: 120px
+
+.recent-post-title
+    width: max-content
+    font-size: 1rem
+    color: var(--color-grey-primary)
+    position: relative
+    &::after
+        position: absolute
+        content: ""
+        background-color: var(--accent-color)
+        height: 2px
+        width: 150px
+        bottom: 8px
+        left: 120px
+
+.recent-post-dsc
+    font-size: 1.5rem
+
+.blog-name
+    font-size: 1.1rem
+
+.blog-card
+    background-color: var(--color-black-primary)
+    border-radius: 5px
+    cursor: pointer
+    transition: all .3s linear
+    &:hover
+        background-color:  var(--accent-color)
+
+.modal-dark
+    background-color: #1d1d1d
+
+#blog-full-1,
+#blog-full-2,
+#blog-full-3,
+#blog-full-4
+    .modal-header
+        h5
+            font-family: "JetBrains Mono", serif
+            font-size: 1.5rem
+    .modal-body
+        scroll-behavior: smooth
+        p
+            font-family: "Lora", serif
+            padding: 30px 300px
+            font-size: 1.1rem
+            line-height: 2
+            letter-spacing: 2px
+
+.code-block
+    font-family: "Roboto", serif
+
+.testimonials-title
+    width: max-content
+    font-size: 1rem
+    color: var(--color-grey-primary)
+    position: relative
+    &::after
+        position: absolute
+        content: ""
+        background-color: var(--accent-color)
+        height: 2px
+        width: 150px
+        bottom: 8px
+        left: 120px
+
+.testimonials-subtitle
+    font-size: 1.5rem
+
+.review-card
+    height: 300px !important
+    margin: 0 15px
+    padding: 15px 20px
+    background-color: var(--color-black-primary)
+
+.rating
+    color: gold
+
+.review                                                     
+    margin-top: 5px
+    font-size: .8rem
+
+.client-name
+    margin-top: 5px
+    font-size: 1.2rem
+
+.client-job
+    font-size: 1rem
+    font-style: italic
+    color:  var(--color-grey-primary)
+
+.client-photo
+    img
+        border-radius: 50%
+
+.center
+    color: black
+
+.slick-slide
+    opacity: .4
+    transition: opacity .5s
+
+.slick-center
+    opacity: 1
+    transition: transform .5s
+
+
+.stat-counter
+    i,
+    h5
+        color: var(--accent-color)
+
+.counting
+    font-size: 2.5rem
+
+.tooltip-inner
+    background-color: var(--accent-color) !important
+    
+.tooltip-arrow
+    display: none !important
+
+#sidebarMenu
+    background-color: var(--color-black-primary)
+    color: #b9b9b9
+    li
+        cursor: pointer
+        transition: all .2s linear
+        &:hover
+            color: var(--accent-color)
+
+.filter-gallery
+    .filter-buttons
+        display: flex
+        gap: 20px
+
+    .filter-btn
+        font-size: 16px
+        padding: 10px
+        border: none
+        background: none
+        cursor: pointer
+        position: relative
+        transition: color 0.3s
+        color: var(--text-color)
+      
+
+      &.selected
+            color: var(--accent-color)
+        
+
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 2px
+            background-color: var(--accent-color)
+
+      &:hover
+            color: var(--accent-color)
+
+  .gallery
+        display: flex
+        flex-wrap: wrap
+
+        .gallery-item
+            display: block 
+            visibility: visible 
+
+        &.corporate, &.retail, &.admin
+            display: block 
+
+        &.hidden
+            display: none 
