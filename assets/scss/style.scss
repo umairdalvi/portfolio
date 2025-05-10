@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
 :root {
   --body-text: #171717cc;
   --black: #171717;
@@ -12,13 +13,17 @@
 }
 
 @keyframes blink {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     opacity: 1;
   }
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +70,7 @@ a {
   font-family: "Instrument Sans", sans-serif;
 }
 
-.btn-outline, .btn {
+%common-btn-properties {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -77,16 +82,20 @@ a {
 }
 
 .btn {
+  @extend %common-btn-properties;
   border: none;
   background-color: var(--neon-green);
 }
 
-.btn-hover:hover {
-  background-color: #171717;
-  color: var(--white);
+.btn-hover {
+  &:hover {
+    background-color: #171717;
+    color: var(--white);
+  }
 }
 
 .btn-outline {
+  @extend %common-btn-properties;
   border: 1px solid var(--beige);
 }
 
@@ -100,11 +109,12 @@ a {
 
 .nav-logo {
   font-family: "JetBrains Mono", sans-serif;
-}
-.nav-logo a {
-  font-size: 1.35rem;
-  font-weight: 500;
-  color: var(--black);
+
+  a {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--black);
+  }
 }
 
 .nav-logo-deco {
@@ -126,22 +136,27 @@ a {
   color: #042e41;
   font-size: 1.25rem;
   position: relative;
-}
-.nav-link::after {
-  position: absolute;
-  content: "";
-  background-color: var(--neon-green);
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: -3px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s linear;
-}
-.nav-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: var(--neon-green);
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s linear;
+  }
+
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
 }
 
 .navbar {
